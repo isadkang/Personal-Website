@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
+    <link rel="icon" href="img/logo.jpg">
+    <title>IrsyadNataprawira</title>
 </head>
-<body>
+<body onload="popup()">
 
     <!-- NAVBAR -->
     <div class="navbar">
@@ -17,16 +18,27 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#porto">Skills</a></li>
                 <li><a href="#kontak">Contact</a></li>
             </ul>
         </nav>
     <!-- END NAVBAR -->
+
+    <!-- button to top -->
+    <div class="button-to-top" onclick="scrollKeatas()">
+        <img src="img/chevrons-up.png" alt="TOP">
+    </div>
+    <!-- button to top -->
+
+
         
     <!-- CONTENT HOME -->
     <div class="content">
         <h4>Hello! Nama Saya</h4>
         <h1>Muhammad<span>Irsyad</span>Nataprawira</h1>
-        <h3>Ngoding aja dulu, jagonya belakangan😁</h3>
+        <h3>Saya adalah seorang pelajar yang baru nyebur di dunia<br>ngoding-mengoding dan saya punya pegangan :</h3>
+        <h2>"Ngoding aja dulu, jagonya belakangan."</h2>
+        <img src="img/kkgpotocrop.jpeg" alt="...">
     </div>
     <!-- END CONTENT HOME -->
 
@@ -37,26 +49,46 @@
         <div class="main">
             <img src="img/myface.jpg" alt="...">
             <div class="about-text">
-                <h2>Tentang Saya</h2>
-                <h5>Pelajar<span>&</span>Bercita-cita menjadi programmer handal</h5>
-                <p>Saya adalah seorang pelajar di sekolah Pusat Keunggulan yaitu SMK WIKRAMA BOGOR, di sekolah ini saya mengambil jurusan Pengembangan Perangkat Lunak dan Gim (PPLG).
+                <h2>About me</h2>
+                <h5>Pelajar <span>&</span> Bercita-cita menjadi Programmer</h5>
+                <p>Saya adalah seorang pelajar di sekolah Pusat Keunggulan yaitu SMK WIKRAMA BOGOR, di sekolah ini saya mengambil jurusan Pengembangan Perangkat Lunak dan Gim (PPLG), atau dulunya dikenal dengan nama Rekayasa Perangkat Lunak (RPL).
                 </p>
-                <h5>Pres<span>tasi</span></h5>
-                <p>Alhamdulillah berkat bimbingan orang tua dan tentunya Karena Allah Subhanahu Wata'ala, saya bisa meraih berbagai macam prestasi</p>
-                <ol>
-                    <li>Juara 1 Pidato SD Tingkat Kecamatan Cicurug (Kelas 4 SD)</li>
-                    <li>Juara 2 Pidato SD Tingkat Kabupaten Sukabumi (Kelas 8 SMP)</li>
-                </ol>
-                <button type="button">Diskusi?</button>
+                <img src="img/logopplg.png" alt="logo" style="width: 100px; height:100px">
+                <img src="img/logo-wk.png" alt="logo" style="width: 100px; height:100px">
+                <p>Lihat lebih lanjut tentang SMK WIKRAMA BOGOR!</p>
+                <a href="https://kangschoolweb.netlify.app/" class="button-5">SMK WIKRAMA BOGOR</a>
             </div>
         </div>
     </div>
     <!-- END ABOUT PAGE -->
 
+    <!-- ABOUT 2 -->
+    <div class="about2">
+        <div class="main2">
+            <div class="about-text">
+                <h2>Prestasi</h2>
+                <h5>Prestasi <span>sedari</span> SD-SMP</h5>
+                <p><strong>Dari SD sampai SMP Alhamdulillah saya sering memenangkan berbagai perlombaan diantaranya adalah sebagai berikut</strong> :</p>
+                <ol>
+                    <li>Juara 3 MTQ Tingkat SD Se-Kecamatan Cicurug</li>
+                    <li>Juara 2 MTQ Tingkat SD Se-Kecamatan Cicurug</li>
+                    <li>Juara 2 MTQ Tingkat SD Se-Kecamatan Cicurug</li>
+                    <li>Juara 1 Pidato Tingkat SD Se-Kecamatan Cicurug</li>
+                    <li>Juara 3 Vokal Solo Tingkat SD Se-Kecamatan Cicurug</li>
+                    <li>Juara 1 Puisi Tingkat SD Se-Kecamatan Cicurug</li>
+                    <li>Juara 2 Pupuh Sunda Tingkat SD Se-Kecamatan Cicurug</li>
+                    <li>Juara 2 Pidato Tingkat SMP Se-Kabupaten Sukabumi</li>
+                </ol>
+                <p><strong>Tak lupa semua itu karena bimbingan dari Guru, tentunya orang tua dan karena Allah Subhanahu Wata'ala</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT 2 -->
+
     <!-- SKILL PAGE -->
-    <div class="skills">
+    <div class="skills" id="porto">
         <div class="title">
-            <h2>Skills</h2>
+            <h2>Skills & Portofolio</h2>
         </div>
         <div class="box">
             <div class="card1">
@@ -64,8 +96,7 @@
                 <h5>JavaScript</h5>
                 <div class="pra">
                     <p>Sedang mempelajari JavaScript secara otodidak</p>
-                    <p style="text-align:center;"></p>
-                    <a href="#" class="button">Click!</a>
+                    <p style="text-align:center;">.</p>
                 </div>
             </div>
 
@@ -74,8 +105,7 @@
                 <h5>HTML</h5>
                 <div class="pra">
                     <p>Memiliki skill di HTML, walaupun ga jago-jago amat</p>
-                    <p style="text-align:center;"></p>
-                    <a href="#" class="button">Click!</a>
+                    <p style="text-align:center;">.</p>
                 </div>
             </div>
 
@@ -84,13 +114,51 @@
                 <h5>CSS</h5>
                 <div class="pra">
                     <p>Bisa sikit-sikit CSS, ga jago sih tapi bisa hehe</p>
-                    <p style="text-align:center;"></p>
-                    <a href="#" class="button">Click!</a>
+                    <p style="text-align:center;">.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- END SKILL PAGE -->
+   <!-- END SKILL PAGE -->
+
+   <!-- Catalog -->
+   <section class="section-card" id="section">
+    <div class="card card4">
+        <a href="https://kangdarkmode.netlify.app/"><img src="img/dark-mode.png" alt="" class="card__img"></a>
+        <div class="card__details">
+            <ul>
+                <li>Projek Dark Mode </li>
+                <li>Projek ini cuma buat have fun doang</li>
+                <li><i>Jadi maaf kalo jelek</i></li>
+                <li><strong>mau mampir??? Klik aja</strong></li>
+            </ul>
+        </div>
+        <a href="https://kangdarkmode.netlify.app/" class="btn">Gaskeun!</a>
+    </div>
+    <div class="card card5">
+         <a href="#"><img src="img/sertifikat-cmd.png" alt="" class="card__img"></a>
+        <div class="card__details">
+            <ul>
+                <li>Menyelesaikan online course </li>
+                <li>Dapet serti dari progate.com</li>
+            </ul>
+        </div>
+        <a href="#section" class="btn">Gaskeun!</a>
+    </div>
+    <div class="card card6">
+        <a href=""><img src="img/school-wk.png" alt="" class="card__img"></a>
+        <div class="card__details">
+            <ul>
+                <li>School profile smk wikrama</li>
+                <li><i>website ini adalah website smk wikrama versi lite</i></li>
+                <li><strong>mau mampir??? Klik aja</strong></li>
+            </ul>
+        </div>
+        <a href="https://kangschoolweb.netlify.app/" class="btn">Gaskeun!</a>
+    </div>
+    
+</section>
+<!-- EndCatalog -->
 
     <div class="kontak" id="kontak">
         <h2>Kalo mau chat, chat aja gapapa mumpung sepi wkwk.</h2>
@@ -99,13 +167,22 @@
             <a href="https://wa.me/6281287722164"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100021994388760"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/muhammad-irsyad-nataprawira-830b83249/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/isadkang"><i class="fa-brands fa-github"></i></a>
         </div>
+        <br>
+        <section class="section">
+            <h2 class="section-header">Address</h2>
+            <hr>
+            <br>
+            <p><b>Home Address </b>: Kp. Kaum Kidul Rt.02/03 Kec. Cicurug - Kab. Sukabumi - Jawa Barat - Indonesia</p>
+            <p><b>School At </b>: SMK WIKRAMA BOGOR</p>
+          </section>
     </div>
 
     <footer>
         <p>Made with love by Muhammad Irsyad Nataprawira, ©2022</p>
     </footer>
 
-
+    <script src="main.js"></script>
 </body>
 </html>
