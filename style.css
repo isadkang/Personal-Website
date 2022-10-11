@@ -154,6 +154,11 @@ h4 {
     width: 430px;
 }
 
+.img-aku {
+    border-radius: 10px;;
+    box-shadow: 0 10px 200px 5px rgb(255, 255, 255);
+}
+
 .about-text {
     width: 550px;
 }
