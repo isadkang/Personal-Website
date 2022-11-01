@@ -3,186 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,700&family=Quicksand&family=Reem+Kufi+Fun&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/logo.jpg">
+    <link rel="icon" href="img/logo-t.jpg">
     <title>IrsyadNataprawira</title>
 </head>
-<body onload="popup()">
+<body>
 
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <nav>
-            <h2 class="logo">Irsyad<span>Web</span></h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#porto">Skills</a></li>
-                <li><a href="#kontak">Contact</a></li>
-            </ul>
-        </nav>
-    <!-- END NAVBAR -->
-
-    <!-- button to top -->
-    <div class="button-to-top" onclick="scrollKeatas()">
-        <img src="img/chevrons-up.png" alt="TOP">
+    <!-- sidebar -->
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Back</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
-    <!-- button to top -->
 
-
-        
-    <!-- CONTENT HOME -->
-    <div class="content">
-        <h4>Hello! Nama Saya</h4>
-        <h1>Muhammad<span>Irsyad</span>Nataprawira</h1>
-        <h3>Saya adalah seorang pelajar yang baru nyebur di dunia<br>ngoding-mengoding dan saya punya pegangan :</h3>
-        <h2>"Ngoding aja dulu, jagonya belakangan."</h2>
-        <img src="img/kkgpotocrop.jpeg" alt="...">
-    </div>
-    <!-- END CONTENT HOME -->
-
-</div>
-
-    <!-- ABOUT PAGE -->
-    <div class="about" id="about">
-        <div class="main">
-            <img src="img/myface.jpg" alt="..." class="img-aku">
-            <div class="about-text">
-                <h2>About me</h2>
-                <h5>Pelajar <span>&</span> Bercita-cita menjadi Programmer</h5>
-                <p>Saya adalah seorang pelajar di sekolah Pusat Keunggulan yaitu SMK WIKRAMA BOGOR, di sekolah ini saya mengambil jurusan Pengembangan Perangkat Lunak dan Gim (PPLG), atau dulunya dikenal dengan nama Rekayasa Perangkat Lunak (RPL).
-                </p>
-                <img src="img/logopplg.png" alt="logo" style="width: 100px; height:100px">
-                <img src="img/logo-wk.png" alt="logo" style="width: 100px; height:100px">
-                <p>Lihat lebih lanjut tentang SMK WIKRAMA BOGOR!</p>
-                <a href="https://kangschoolweb.netlify.app/" class="button-5">SMK WIKRAMA BOGOR</a>
-            </div>
-        </div>
-    </div>
-    <!-- END ABOUT PAGE -->
-
-    <!-- ABOUT 2 -->
-    <div class="about2">
-        <div class="main2">
-            <div class="about-text">
-                <h2>Prestasi</h2>
-                <h5>Prestasi <span>sedari</span> SD-SMP</h5>
-                <p><strong>Dari SD sampai SMP Alhamdulillah saya sering memenangkan berbagai perlombaan diantaranya adalah sebagai berikut</strong> :</p>
-                <ol>
-                    <li>Juara 3 MTQ Tingkat SD Se-Kecamatan Cicurug</li>
-                    <li>Juara 2 MTQ Tingkat SD Se-Kecamatan Cicurug</li>
-                    <li>Juara 2 MTQ Tingkat SD Se-Kecamatan Cicurug</li>
-                    <li>Juara 1 Pidato Tingkat SD Se-Kecamatan Cicurug</li>
-                    <li>Juara 3 Vokal Solo Tingkat SD Se-Kecamatan Cicurug</li>
-                    <li>Juara 1 Puisi Tingkat SD Se-Kecamatan Cicurug</li>
-                    <li>Juara 2 Pupuh Sunda Tingkat SD Se-Kecamatan Cicurug</li>
-                    <li>Juara 2 Pidato Tingkat SMP Se-Kabupaten Sukabumi</li>
-                </ol>
-                <p><strong>Tak lupa semua itu karena bimbingan dari Guru, tentunya orang tua dan karena Allah Subhanahu Wata'ala</strong></p>
-            </div>
-        </div>
-    </div>
-    <!-- ABOUT 2 -->
-
-    <!-- SKILL PAGE -->
-    <div class="skills" id="porto">
-        <div class="title">
-            <h2>Skills & Portofolio</h2>
-        </div>
-        <div class="box">
-            <div class="card1">
-                <i class="fa-brands fa-js"></i>
-                <h5>JavaScript</h5>
-                <div class="pra">
-                    <p>Sedang mempelajari JavaScript secara otodidak</p>
-                    <p style="text-align:center;">.</p>
-                </div>
-            </div>
-
-            <div class="card2">
-                <i class="fa-brands fa-html5"></i>
-                <h5>HTML</h5>
-                <div class="pra">
-                    <p>Memiliki skill di HTML, walaupun ga jago-jago amat</p>
-                    <p style="text-align:center;">.</p>
-                </div>
-            </div>
-
-            <div class="card3">
-                <i class="fa-brands fa-css3"></i>
-                <h5>CSS</h5>
-                <div class="pra">
-                    <p>Bisa sikit-sikit CSS, ga jago sih tapi bisa hehe</p>
-                    <p style="text-align:center;">.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-   <!-- END SKILL PAGE -->
-
-   <!-- Catalog -->
-   <section class="section-card" id="section">
-    <div class="card card4">
-        <a href="https://kangdarkmode.netlify.app/"><img src="img/dark-mode.png" alt="" class="card__img"></a>
-        <div class="card__details">
-            <ul>
-                <li>Projek Dark Mode </li>
-                <li>Projek ini cuma buat have fun doang</li>
-                <li><i>Jadi maaf kalo jelek</i></li>
-                <li><strong>mau mampir??? Klik aja</strong></li>
-            </ul>
-        </div>
-        <a href="https://kangdarkmode.netlify.app/" class="btn">Gaskeun!</a>
-    </div>
-    <div class="card card5">
-         <a href="#"><img src="img/sertifikat-cmd.png" alt="" class="card__img"></a>
-        <div class="card__details">
-            <ul>
-                <li>Menyelesaikan online course </li>
-                <li>Dapet serti dari progate.com</li>
-            </ul>
-        </div>
-        <a href="#section" class="btn">Gaskeun!</a>
-    </div>
-    <div class="card card6">
-        <a href=""><img src="img/school-wk.png" alt="" class="card__img"></a>
-        <div class="card__details">
-            <ul>
-                <li>School profile smk wikrama</li>
-                <li><i>website ini adalah website smk wikrama versi lite</i></li>
-                <li><strong>mau mampir??? Klik aja</strong></li>
-            </ul>
-        </div>
-        <a href="https://kangschoolweb.netlify.app/" class="btn">Gaskeun!</a>
-    </div>
     
-</section>
-<!-- EndCatalog -->
+    <!-- bagian header -->
+    <header>
+        <div class="container">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <div class="kontak" id="kontak">
-        <h2>Kalo mau chat, chat aja gapapa mumpung sepi wkwk.</h2>
-        <div class="icon-contact">
-            <a href="https://www.instagram.com/isadsnata_/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/6281287722164"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100021994388760"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/muhammad-irsyad-nataprawira-830b83249/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/isadkang"><i class="fa-brands fa-github"></i></a>
+            <!-- menu hp kalo di hp -->
+            <label for="check" class="mobile-menu"><i class="fa-solid fa-bars fa-2x"></i></label>
         </div>
-        <br>
-        <section class="section">
-            <h2 class="section-header">Address</h2>
-            <hr>
-            <br>
-            <p><b>Home Address </b>: Kp. Kaum Kidul Rt.02/03 Kec. Cicurug - Kab. Sukabumi - Jawa Barat - Indonesia</p>
-            <p><b>School At </b>: SMK WIKRAMA BOGOR</p>
-          </section>
-    </div>
+    </header>
 
+    <!-- bagian banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-left">
+                <img src="img/kkgpotocrop.jpeg" alt="">
+                <h2>Hallo... <br>
+                    Saya adalah seorang <span class="typing"></span> </h2>
+                <p>Selamat Datang di website portofolio Saya</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ini about -->
+    <section id="about">
+        <div class="container">
+            <h3>About Me</h3>
+            <p>Hai semuanya pengunjung web ini, saya adalah pembuat web ini nama saya Irsyad sering dipanggil Isad, actually i have a lot of call name but you can call me Isad or Icad. Saya lahir pada 15 Agustus 2006, saya tinggal di Cicurug, Sukabumi, Jawa Barat. <br> <br>
+                Saya meneruskan pendidikan dari Mts. Assa'adah Cicurug ke SMK WIKRAMA BOGOR, di sekolah saat ini saya mengambil jurusan PPLG (Pengembangan Perangkat Lunak dan Gim).</p>
+            
+        </div>
+    </section>
+
+    <!-- ini skills -->
+    <section id="skills">
+        <div class="container">
+            <h3>Skills</h3>
+            <h4>HTML</h4>
+            <div class="bar">
+                <span class="score html">85%</span>
+            </div>
+
+            <h4>CSS</h4>
+            <div class="bar">
+                <span class="score css">78%</span>
+            </div>
+            
+            <h4>Javascript</h4>
+            <div class="bar">
+                <span class="score js">10%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ini porto -->
+    <section id="portofolio">
+        <div class="container">
+            <h3>Portofolio</h3>
+            <div class="col-4">
+                <a href="">
+                    <img src="img/school-wk.png" alt="">
+                    <span>Web School - <a href="#">Click</a></span>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="">
+                    <img src="img/sertifikat-cmd.png" alt="">
+                    <span>Sertifikat CMD - <a href="#">Click</a></span>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="">
+                    <img src="img/uipersonalweb.png" alt="">
+                    <span>New Ui Personal Web - <a href="#">Click</a></span>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="">
+                    <img src="img/projek-ui-webschool.png" alt="">
+                    <span>New Ui School Web - <a href="#">Click</a></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <h3>Contact</h3>
+            <div class="col-3">
+                <h4>Alamat</h4>
+                <p>Jl. Siliwangi, Cicurug, Sukabumi, Jawa Barat</p>
+            </div>
+
+            <div class="col-3">
+                <h4>Email</h4>
+                <p>irsyadnataprawira15@gmail.com</p>
+            </div>
+
+            <div class="col-3">
+                <h4>Telepon</h4>
+                <p>+62 812 8772 2164</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ini footer -->
     <footer>
-        <p>Made with love by Muhammad Irsyad Nataprawira, ©2022</p>
+        <div class="container">
+            <small>Copyright &copy, 2022 - Muhammad Irsyad Nataprawira.</small>
+        </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
