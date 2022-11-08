@@ -254,9 +254,12 @@ footer small {
     }
 
     .banner img {
-        width: 48%;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
         position: relative;
-        left: 85px;
+        left: 45px;
     }
     
     .mobile-menu {
