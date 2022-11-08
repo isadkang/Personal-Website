@@ -1,5 +1,5 @@
 // iniii eee codingan buat ngetik 
-const txtElement = ['Pelajar...', 'WebDeveloper...', 'Gamers...']
+const txtElement = ['Welcome To My Portofolio']
 let count = 0
 let txtIndex = 0
 let currentTxt = ''
